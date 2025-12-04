@@ -1,2 +1,28 @@
 # SignatureWork
 A portfolio of personal projects that I've worked on throughout my time as a undergraduate student
+
+
+
+Overview 
+This is a portfolio that showcases some personal projects I have worked on in my time as an undegraduate student. Their is four projects that this portfolio will consist of. From this portfolio you will find navigation to each of the repositories for the projects I've mentioned as long as a detailed overview about what each project is for.
+
+
+
+Project 1 - Crypto Tax Organizer 
+
+  I have a passion for crypto currencies and as a result making transactions on blockchains are taxable events. Their really is no (inexpensive) way to organize your transactions and keep track of them cleanly without spending thousands of dollars. The goal of this project wasn't a start to finish goal in which you gather all your transactions and their ready to be submitted, but to cut down on time consuming steps like looking at a blockchain explorer history. I included this project in my portfolio due to the clear connection it has to the stthomas mission and I wanted to highlight a unique skill set that I have developed as a result of my passion/interests. I learned how to query transaction logs from the Solana blockchain. I  learned how to use https://www.helius.dev/ api. I read through the documentation to create a process of identifying transactions. I did this by passing my public wallet address keys and using their api call template. I looked for all transactions that were made in a given time range and got their time stamp, and other important information. I then organized them by date and amount and gave them a tag category of what type of transaction they were. This is a time saver from the limited options that are availble to use freely. This project connects with the mission of pursuing Common Good at the University of St. Thomas because it's all about innovation. This is a resource that can be used to avoid premium paid options and helps make peoples tax lives easier. By offering and providing knowledge this project can help save time for people and remove some of the uncertainity with their transactions. 
+
+
+ Project 2 - Gigaverse Calculator
+
+ This project is designed to help calculated the Expected value and Best move in a roguelite browser game (gigaverse.io). The game functions as a rock, paper, scissor battler but with values associated to each move with some other unique mechanics. This game is developed on Abstract Blockchain (https://www.abs.xyz/) and you need to mint an NFT to play the game. Each day you have energy that associated with how much you can play the game. In playing the game, you can get rewards or loot drops that can be sold to other players.  The point of this project is to maximize my chances at getting loot by playing the game as efficently as possible, by using a calculator to help me find the best expected value of each move and then choosing it. I chose to include this project because it's one that I used often while playing the game and it required some creative thinking to make possibile. To get this calculator working, I needed to obtain the game-state and the values associated with each game move. The game state changes for both your character and the enemy which means the best Expected move changes. In order to do this, I found my response bearer token that made requests to the games server and used this to pull in gamea data to my script. I learned a lot about making api calls and how valuable the data is that they can provide. 
+
+
+ Project 3 - Game Theory Subgame Perfect Equilibrium Finder for League of Legends (LOL) (DRAFT PHASE)
+ 
+This project was designed as part of a Game theory project for my economics class here at the university. While not required, I decided to take my model a step up and implement it in python. It uses web scraping to capture important player performance data that impacts the model. It also looks at champion winrate data agaisn't opposing champions as part of the model. Finally, I created a database and implement flags to give to each playable champion in the game. With this, I added pairwise bonuses that would benefit if a team picked complementing characters. Those are the components to the model, the script uses a RIOT games development API key to find match history and players usernames, it then searches for this data on a third party site and captures information about their performance over the last year. This is then used in the model. I also added a backwards induction method to help find a potental subgame perfect nash equilibrium strategy profile. This basically means that each team is picking their best reponse to the other team to create a game state that is purely equal. While all hypothetical, it peaked my interest. I chose to include this project because it is a instection of a lot of my passions including computer science, economics, data, and mathematics. I learned a lot about creating a model and implementing that model into python. While this still has work to be done, it works and holds a a high place of interest.
+
+
+Project 4 - Personal Website
+
+This project was designed in my Web Development course and it showcases information about me, projects i've worked on, my resume, etc. I choose to include this as it summarizes a bit about who I am and it showcases a live real example of my web developing experience. You can visit the website at dtboss19.github.io. I learned a lot about structuring HTML and CSS and overall the course taught me a lot about areas of computer science that I did not know much about. From GET and PUT requests, to static, rest, and dynamic servers. This site is a small piece of that accumulated knowledge. 
