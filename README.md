@@ -1,28 +1,135 @@
-# SignatureWork
-A portfolio of personal projects that I've worked on throughout my time as a undergraduate student
+#  Undergraduate Project Portfolio
 
+A collection of personal projects developed throughout my undergraduate studies at the University of St. Thomas.
 
+---
 
-Overview 
-This is a portfolio that showcases some personal projects I have worked on in my time as an undegraduate student. Their is four projects that this portfolio will consist of. From this portfolio you will find navigation to each of the repositories for the projects I've mentioned as long as a detailed overview about what each project is for.
+## Overview
 
+This portfolio showcases four personal projects that demonstrate my skills across various domains including blockchain development, game theory, web scraping, and web development. Each project reflects my passion for combining computer science with real-world applications. You'll find navigation to each repository along with detailed descriptions of what each project accomplishes.
 
+---
 
-Project 1 - Crypto Tax Organizer 
+## Projects
 
-  I have a passion for crypto currencies and as a result making transactions on blockchains are taxable events. Their really is no (inexpensive) way to organize your transactions and keep track of them cleanly without spending thousands of dollars. The goal of this project wasn't a start to finish goal in which you gather all your transactions and their ready to be submitted, but to cut down on time consuming steps like looking at a blockchain explorer history. I included this project in my portfolio due to the clear connection it has to the stthomas mission and I wanted to highlight a unique skill set that I have developed as a result of my passion/interests. I learned how to query transaction logs from the Solana blockchain. I  learned how to use https://www.helius.dev/ api. I read through the documentation to create a process of identifying transactions. I did this by passing my public wallet address keys and using their api call template. I looked for all transactions that were made in a given time range and got their time stamp, and other important information. I then organized them by date and amount and gave them a tag category of what type of transaction they were. This is a time saver from the limited options that are availble to use freely. This project connects with the mission of pursuing Common Good at the University of St. Thomas because it's all about innovation. This is a resource that can be used to avoid premium paid options and helps make peoples tax lives easier. By offering and providing knowledge this project can help save time for people and remove some of the uncertainity with their transactions. 
+###  Project 1 - Crypto Tax Organizer
 
+**The Problem:** Cryptocurrency transactions on blockchains are taxable events, but organizing and tracking them without expensive software (often costing thousands of dollars) is nearly impossible.
 
- Project 2 - Gigaverse Calculator
+**The Solution:** A tool designed to cut down on time-consuming steps like manually reviewing blockchain explorer history.
 
- This project is designed to help calculated the Expected value and Best move in a roguelite browser game (gigaverse.io). The game functions as a rock, paper, scissor battler but with values associated to each move with some other unique mechanics. This game is developed on Abstract Blockchain (https://www.abs.xyz/) and you need to mint an NFT to play the game. Each day you have energy that associated with how much you can play the game. In playing the game, you can get rewards or loot drops that can be sold to other players.  The point of this project is to maximize my chances at getting loot by playing the game as efficently as possible, by using a calculator to help me find the best expected value of each move and then choosing it. I chose to include this project because it's one that I used often while playing the game and it required some creative thinking to make possibile. To get this calculator working, I needed to obtain the game-state and the values associated with each game move. The game state changes for both your character and the enemy which means the best Expected move changes. In order to do this, I found my response bearer token that made requests to the games server and used this to pull in gamea data to my script. I learned a lot about making api calls and how valuable the data is that they can provide. 
+#### What I Built
+- Queries transaction logs directly from the **Solana blockchain**
+- Integrates with the [Helius API](https://www.helius.dev/) for transaction data
+- Filters transactions by time range using public wallet address keys
+- Extracts timestamps and other critical transaction information
+- Organizes transactions by **date** and **amount**
+- Automatically categorizes transactions by type
 
+#### What I Learned
+- Querying blockchain transaction logs
+- Working with the Helius API documentation
+- Building processes for transaction identification and categorization
 
- Project 3 - Game Theory Subgame Perfect Equilibrium Finder for League of Legends (LOL) (DRAFT PHASE)
- 
-This project was designed as part of a Game theory project for my economics class here at the university. While not required, I decided to take my model a step up and implement it in python. It uses web scraping to capture important player performance data that impacts the model. It also looks at champion winrate data agaisn't opposing champions as part of the model. Finally, I created a database and implement flags to give to each playable champion in the game. With this, I added pairwise bonuses that would benefit if a team picked complementing characters. Those are the components to the model, the script uses a RIOT games development API key to find match history and players usernames, it then searches for this data on a third party site and captures information about their performance over the last year. This is then used in the model. I also added a backwards induction method to help find a potental subgame perfect nash equilibrium strategy profile. This basically means that each team is picking their best reponse to the other team to create a game state that is purely equal. While all hypothetical, it peaked my interest. I chose to include this project because it is a instection of a lot of my passions including computer science, economics, data, and mathematics. I learned a lot about creating a model and implementing that model into python. While this still has work to be done, it works and holds a a high place of interest.
+#### Connection to Mission
+This project embodies the pursuit of **Common Good** at the University of St. Thomas through innovation. It provides a free resource that helps people avoid expensive premium options and simplifies their tax preparation process.
 
+---
 
-Project 4 - Personal Website
+###  Project 2 - Gigaverse Calculator
 
-This project was designed in my Web Development course and it showcases information about me, projects i've worked on, my resume, etc. I choose to include this as it summarizes a bit about who I am and it showcases a live real example of my web developing experience. You can visit the website at dtboss19.github.io. I learned a lot about structuring HTML and CSS and overall the course taught me a lot about areas of computer science that I did not know much about. From GET and PUT requests, to static, rest, and dynamic servers. This site is a small piece of that accumulated knowledge. 
+**The Problem:** [Gigaverse.io](https://gigaverse.io) is a roguelite browser game on the [Abstract Blockchain](https://www.abs.xyz/) that functions as a rock-paper-scissors battler with values assigned to each move. Maximizing rewards requires optimal decision-making.
+
+**The Solution:** An expected value calculator that determines the best move based on the current game state.
+
+#### What I Built
+- Captures real-time game state data
+- Calculates expected value for each possible move
+- Accounts for both player and enemy state changes
+- Uses bearer token authentication to pull game data from the server
+
+#### What I Learned
+- Making authenticated API calls
+- Extracting and utilizing game state data
+- Understanding the value of real-time data in decision-making applications
+
+#### Why I Included This
+This is a project I actively used while playing the game. It required creative problem-solving to intercept and utilize game data effectively.
+
+---
+
+###  Project 3 - Game Theory Nash Equilibrium Finder for League of Legends (Draft Phase)
+
+**The Problem:** In competitive League of Legends, the draft phase is a strategic game within itself. Finding optimal champion selections requires analyzing vast amounts of data.
+
+**The Solution:** A Python implementation of game theory principles to find subgame perfect Nash equilibrium strategies for the draft phase.
+
+#### What I Built
+- **Web Scraping:** Captures player performance data from third-party sites
+- **Champion Analytics:** Analyzes champion winrates against opposing champions
+- **Custom Database:** Created flags for each playable champion with pairwise bonuses for complementing team compositions
+- **RIOT Games API Integration:** Retrieves match history and player usernames
+- **Backwards Induction Algorithm:** Finds potential subgame perfect Nash equilibrium strategy profiles
+
+#### Components of the Model
+1. Player performance data (scraped from historical data)
+2. Champion vs. champion winrate matchups
+3. Team composition synergy bonuses
+
+#### What I Learned
+- Building and implementing mathematical models in Python
+- Working with the RIOT Games Development API
+- Web scraping for data collection
+- Applying game theory concepts (Nash equilibrium, backwards induction) programmatically
+
+#### Why I Included This
+This project sits at the intersection of my passions: **computer science**, **economics**, **data science**, and **mathematics**. While still a work in progress, it represents one of my most ambitious and personally meaningful projects.
+
+---
+
+###  Project 4 - Personal Website
+
+**Live Site:** [dtboss19.github.io](https://dtboss19.github.io)
+
+**The Project:** A personal website developed as part of my Web Development course, showcasing information about me, my projects, and my resume.
+
+#### What I Built
+- Personal portfolio website
+- Project showcases
+- Resume/CV section
+- Responsive design with HTML & CSS
+
+#### What I Learned
+- HTML structure and semantic markup
+- CSS styling and layout techniques
+- GET and PUT requests
+- Differences between static, REST, and dynamic servers
+- Full-stack web development fundamentals
+
+#### Why I Included This
+This project summarizes who I am and provides a live, real-world example of my web development experience.
+
+---
+
+## 🔗 Repository Links
+
+| Project | Repository |
+|---------|------------|
+| Crypto Tax Organizer | (https://github.com/dtboss19/cryptotaxes) |
+| Gigaverse Calculator | (https://github.com/dtboss19/GigaverseCalculator?tab=readme-ov-file) |
+| LOL Nash Equilibrium Finder | (https://github.com/dtboss19/gametheorylol) |
+| Personal Website | [dtboss19.github.io](https://dtboss19.github.io) |
+
+---
+
+## Contact
+
+Feel free to reach out or explore more of my work!
+
+- **Website:** [dtboss19.github.io](https://dtboss19.github.io)
+- **LinkedIn:**(https://www.linkedin.com/in/dylanthomas19/)
+- **Email:** [thom6530@stthomas.edu or dtboss19@gmail.com)
+
+---
+
+*University of St. Thomas — Undergraduate Portfolio*
